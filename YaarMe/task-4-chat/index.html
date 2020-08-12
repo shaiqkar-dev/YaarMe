@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#26a69a">
+
+    <title>YaarMe Chat</title>
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./static/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./static/img/favicon-16x16.png">
+
+    <link rel="stylesheet" type="text/css" href="./static/css/styles.css">
+
+</head>
+
+<body>
+
+    
+    
+    <!-- header section -->
+    <header class="flex align-centre relative">
+
+        <div class="flex align-centre left-sec">
+            <a href="#" class="flex logo">
+                <img src="./static/img/icons/logo.svg" alt="logo">
+                <span>YaarMe Chat</span>
+            </a>
+
+        </div>
+
+        <div class="flex right-sec"> 
+            <div class="relative">
+                <a class="flex align-centre profile ">
+                    <img src="./static/img/profile-2.jpg" alt="Shaiq Kar">
+                    <span style="margin-left: .5rem;">Profile</span>
+                </a>
+            </div>
+            <div class="relative">
+                <a class="flex align-centre profile p-btn">
+                    <span>Shaiq Kar</span>
+                    <img src="./static/img/profile.jpg" alt="Shaiq Kar">
+                </a>
+            </div>
+        </div>
+
+    </header>
+
+    <!-- main app part -->
+    <main id="app" class="flex">
+
+        <div class="cover"></div>
+
+        <div class="flex container">
+            <!-- Chats sidebar -->
+            <div class="flex chats-sidebar">
+
+                <div class="flex align-centre chats-sidebar-header">
+                    <span style="font-size: 21px">Chats</span>
+                </div>
+
+                <div class="chats-search">
+                    <form>
+                        <input type="text" placeholder="Search" class="input">
+                    </form>
+                </div>
+
+                <div class="chats-active" tabindex="2">
+                    <ul class="flex chats">
+
+                        <li class="flex chat-item" style=" border-top: 0">
+                            <div class="avatar avatar-g">
+                                <img src="static/img/profile-4.jpg">
+                            </div>
+                            <div class="flex relative chat-item-body">
+                                <div class="flex chat-sender-m">
+                                    <h5 class="t-pr">Aaliya</h5>
+                                    <p>Whats up, plz send the assignment</p>
+                                </div>
+                                <div class="chat-s-data">
+                                    <div class="flex msg-count">4</div>
+                                    <small class="t-pr">02:34 PM</small>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="flex chat-item">
+                            <div class="avatar avatar-y">
+                                <img src="static/img/profile-5.jpg">
+                            </div>
+                            <div class="flex relative chat-item-body">
+                                <div class="flex chat-sender-m">
+                                    <h5 class="t-pr">Rane Smith</h5>
+                                    <p>
+                                        <img src="./static/img/icons/camera.svg" style="width: 12px;margin-right: .25rem"> 
+                                        Photo
+                                    </p>
+                                </div>
+                                <div class="chat-s-data">
+                                    <div class="flex msg-count">1</div>
+                                    <small class="t-pr">Yesterday</small>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="flex chat-item active-item">
+                            <div class="avatar">
+                                <img src="static/img/profile-2.jpg">
+                            </div>
+                            <div class="flex relative chat-item-body">
+                                <div class="flex chat-sender-m">
+                                    <h5 class="t-pr">Rachna Singh</h5>
+                                    <p style="font-weight: 600;color: #646464">I sent you all the files. Good Luck with...</p>
+                                </div>
+                                <div class="chat-s-data">
+                                    <small class="t-m">11:05 AM</small>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="flex chat-item">
+                            <div class="avatar">
+                                <img src="static/img/profile-3.jpg">
+                            </div>
+                            <div class="flex relative chat-item-body">
+                                <div class="flex chat-sender-m">
+                                    <h5>Candice</h5>
+                                    <p>
+                                        I need you today. Can you come with me?
+                                    </p>
+                                </div>
+                                <div class="chat-s-data">
+                                    <small class="t-m">08:41 AM</small>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="flex chat-item">
+                            <div class="avatar family-chat">
+                                <img src="static/img/icons/family.svg" style="width:25px;">
+                            </div>
+                            <div class="flex relative chat-item-body">
+                                <div class="flex chat-sender-m">
+                                    <h5>= MY Family =</h5>
+                                    <p>
+                                       <span style="font-weight: 600">Maher Ruslandi: </span> Hello
+                                    </p>
+                                </div>
+                                <div class="chat-s-data">
+                                    <small class="t-m">Yesterday</small>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="flex chat-item">
+                            <div class="avatar avatar-y">
+                                <img src="static/img/profile-1.jpg">
+                            </div>
+                            <div class="flex relative chat-item-body">
+                                <div class="flex chat-sender-m">
+                                    <h5>Jennica Kindred</h5>
+                                    <p>
+                                        <img src="./static/img/icons/video.svg" style="width: 12px;margin-right: .25rem"> 
+                                        Video
+                                    </p>
+                                </div>
+                                <div class="chat-s-data">
+                                    <small class="t-m">03:41 PM</small>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="flex chat-item">
+                            <div class="avatar">
+                                <img src="static/img/profile-6.jpg">
+                            </div>
+                            <div class="flex relative chat-item-body">
+                                <div class="flex chat-sender-m">
+                                    <h5>Shikhar</h5>
+                                    <p>
+                                        Bro, party next week
+                                    </p>
+                                </div>
+                                <div class="chat-s-data">
+                                    <small class="t-m">07:13 PM</small>
+                                </div>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="chats-new">
+                    <button class="chats-new-btn">New Chat</button>
+                </div>
+
+            </div>
+            <!-- //Chats sidebar -->
+
+            <!-- chat window -->
+            <div class="chat-window flex">
+                <div class="chat-messages" tabindex="1">
+                    <div class="flex messages" id="msg-box"> 
+
+                        <div class="msg msg-in">
+                            <div class="flex" style="justify-content: flex-end">
+                                <img class="msg-avatar" src="./static/img/profile.jpg">
+                            </div>
+                            <div>
+                                <div class="msg-msg">
+                                    Hello, how are you?
+                                </div>
+                                <div class="msg-time">
+                                    09:35 AM
+                                    <span class="double-tick">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" id="msg-dblcheck-ack" x="2063" y="2076"><path d="M15.01 3.316l-.478-.372a.365.365 0 0 0-.51.063L8.666 9.88a.32.32 0 0 1-.484.032l-.358-.325a.32.32 0 0 0-.484.032l-.378.48a.418.418 0 0 0 .036.54l1.32 1.267a.32.32 0 0 0 .484-.034l6.272-8.048a.366.366 0 0 0-.064-.512zm-4.1 0l-.478-.372a.365.365 0 0 0-.51.063L4.566 9.88a.32.32 0 0 1-.484.032L1.892 7.77a.366.366 0 0 0-.516.005l-.423.433a.364.364 0 0 0 .006.514l3.255 3.185a.32.32 0 0 0 .484-.033l6.272-8.048a.365.365 0 0 0-.063-.51z" fill="#4fc3f7"/></svg>
+                                    </span>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="msg">
+                            <div class="flex">
+                                <img class="msg-avatar" src="./static/img/profile-2.jpg">
+                            </div>
+                            <div>
+                                <div class="msg-msg">
+                                   i am fine, how are you?
+                                </div>
+                                <div class="msg-time">
+                                    09:41 AM
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="msg msg-in">
+                            <div class="flex" style="justify-content: flex-end">
+                                <img class="msg-avatar" src="./static/img/profile.jpg">
+                            </div>
+                            <div>
+                                <div class="msg-msg">
+                                    I am fine, thank you. I expect you to send me some files
+                                </div>
+                                <div class="msg-time">
+                                    09:45 AM
+                                    <span class="double-tick">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" id="msg-dblcheck-ack" x="2063" y="2076"><path d="M15.01 3.316l-.478-.372a.365.365 0 0 0-.51.063L8.666 9.88a.32.32 0 0 1-.484.032l-.358-.325a.32.32 0 0 0-.484.032l-.378.48a.418.418 0 0 0 .036.54l1.32 1.267a.32.32 0 0 0 .484-.034l6.272-8.048a.366.366 0 0 0-.064-.512zm-4.1 0l-.478-.372a.365.365 0 0 0-.51.063L4.566 9.88a.32.32 0 0 1-.484.032L1.892 7.77a.366.366 0 0 0-.516.005l-.423.433a.364.364 0 0 0 .006.514l3.255 3.185a.32.32 0 0 0 .484-.033l6.272-8.048a.365.365 0 0 0-.063-.51z" fill="#4fc3f7"/></svg>
+                                    </span>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="msg">
+                            <div class="flex">
+                                <img class="msg-avatar" src="./static/img/profile-2.jpg">
+                            </div>
+                            <div>
+                                <div class="msg-msg">
+                                    What files are you talking about? I am sorry i can't remember right now
+                                </div>
+                                <div class="msg-time">
+                                    09:47 AM
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="msg msg-in">
+                            <div class="flex" style="justify-content: flex-end">
+                                <img class="msg-avatar" src="./static/img/profile.jpg">
+                            </div>
+                            <div>
+                                <div class="msg-msg">
+                                    I need the YaarMe project report of last week, with the images
+                                </div>
+                                <div class="msg-time">
+                                    09:55 AM
+                                    <span class="double-tick">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" id="msg-dblcheck-ack" x="2063" y="2076"><path d="M15.01 3.316l-.478-.372a.365.365 0 0 0-.51.063L8.666 9.88a.32.32 0 0 1-.484.032l-.358-.325a.32.32 0 0 0-.484.032l-.378.48a.418.418 0 0 0 .036.54l1.32 1.267a.32.32 0 0 0 .484-.034l6.272-8.048a.366.366 0 0 0-.064-.512zm-4.1 0l-.478-.372a.365.365 0 0 0-.51.063L4.566 9.88a.32.32 0 0 1-.484.032L1.892 7.77a.366.366 0 0 0-.516.005l-.423.433a.364.364 0 0 0 .006.514l3.255 3.185a.32.32 0 0 0 .484-.033l6.272-8.048a.365.365 0 0 0-.063-.51z" fill="#4fc3f7"/></svg>
+                                    </span>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="msg">
+                            <div class="flex">
+                                <img class="msg-avatar" src="./static/img/profile-2.jpg">
+                            </div>
+                            <div>
+                                <div class="msg-msg">
+                                    Ah! those files, wait i will send in a moment
+                                </div>
+                                <div class="msg-time">
+                                    09:59 AM
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="msg msg-in">
+                            <div class="flex" style="justify-content: flex-end">
+                                <img class="msg-avatar" src="./static/img/profile.jpg">
+                            </div>
+                            <div>
+                                <div class="msg-msg">
+                                    Ya! but send them asap. I need them urgently
+                                </div>
+                                <div class="msg-time">
+                                    10:03 AM
+                                    <span class="double-tick">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" id="msg-dblcheck-ack" x="2063" y="2076"><path d="M15.01 3.316l-.478-.372a.365.365 0 0 0-.51.063L8.666 9.88a.32.32 0 0 1-.484.032l-.358-.325a.32.32 0 0 0-.484.032l-.378.48a.418.418 0 0 0 .036.54l1.32 1.267a.32.32 0 0 0 .484-.034l6.272-8.048a.366.366 0 0 0-.064-.512zm-4.1 0l-.478-.372a.365.365 0 0 0-.51.063L4.566 9.88a.32.32 0 0 1-.484.032L1.892 7.77a.366.366 0 0 0-.516.005l-.423.433a.364.364 0 0 0 .006.514l3.255 3.185a.32.32 0 0 0 .484-.033l6.272-8.048a.365.365 0 0 0-.063-.51z" fill="#4fc3f7"/></svg>
+                                    </span>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="msg">
+                            <div class="flex">
+                                <img class="msg-avatar" src="./static/img/profile-2.jpg">
+                            </div>
+                            <div>
+                                <div class="msg-msg">
+                                    Sure, sending to you in 10 minutes
+                                </div>
+                                <div class="msg-time">
+                                    10:09 AM
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="msg msg-in">
+                            <div class="flex" style="justify-content: flex-end">
+                                <img class="msg-avatar" src="./static/img/profile.jpg">
+                            </div>
+                            <div>
+                                <div class="msg-msg">
+                                    Where are the files?
+                                </div>
+                                <div class="msg-time">
+                                    10:25 AM
+                                    <span class="double-tick">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" id="msg-dblcheck-ack" x="2063" y="2076"><path d="M15.01 3.316l-.478-.372a.365.365 0 0 0-.51.063L8.666 9.88a.32.32 0 0 1-.484.032l-.358-.325a.32.32 0 0 0-.484.032l-.378.48a.418.418 0 0 0 .036.54l1.32 1.267a.32.32 0 0 0 .484-.034l6.272-8.048a.366.366 0 0 0-.064-.512zm-4.1 0l-.478-.372a.365.365 0 0 0-.51.063L4.566 9.88a.32.32 0 0 1-.484.032L1.892 7.77a.366.366 0 0 0-.516.005l-.423.433a.364.364 0 0 0 .006.514l3.255 3.185a.32.32 0 0 0 .484-.033l6.272-8.048a.365.365 0 0 0-.063-.51z" fill="#4fc3f7"/></svg>
+                                    </span>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="msg">
+                            <div class="flex">
+                                <img class="msg-avatar" src="./static/img/profile-2.jpg">
+                            </div>
+                            <div>
+                                <div class="msg-msg">
+                                    Sorry i got a bit bussy, just now i sent
+                                </div>
+                                <div class="msg-time">
+                                    10:31 AM
+                                </div>
+                            </div>
+                        </div>
+                        <div class="msg msg-in">
+                            <div class="flex" style="justify-content: flex-end">
+                                <img class="msg-avatar" src="./static/img/profile.jpg">
+                            </div>
+                            <div>
+                                <div class="msg-msg">
+                                    Thank you, got the files
+                                </div>
+                                <div class="msg-time">
+                                    10:45 AM
+                                    <span class="double-tick">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" id="msg-dblcheck-ack" x="2063" y="2076"><path d="M15.01 3.316l-.478-.372a.365.365 0 0 0-.51.063L8.666 9.88a.32.32 0 0 1-.484.032l-.358-.325a.32.32 0 0 0-.484.032l-.378.48a.418.418 0 0 0 .036.54l1.32 1.267a.32.32 0 0 0 .484-.034l6.272-8.048a.366.366 0 0 0-.064-.512zm-4.1 0l-.478-.372a.365.365 0 0 0-.51.063L4.566 9.88a.32.32 0 0 1-.484.032L1.892 7.77a.366.366 0 0 0-.516.005l-.423.433a.364.364 0 0 0 .006.514l3.255 3.185a.32.32 0 0 0 .484-.033l6.272-8.048a.365.365 0 0 0-.063-.51z" fill="#4fc3f7"/></svg>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="msg">
+                            <div class="flex">
+                                <img class="msg-avatar" src="./static/img/profile-2.jpg">
+                            </div>
+                            <div>
+                                <div class="msg-msg">
+                                    I sent you all the files. Good luck with the project
+                                </div>
+                                <div class="msg-time">
+                                    11:05 AM
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <div class="chat-controls">
+                    <form class="flex align-centre">               
+                        <div class="cc-emoji">
+                            <button  type="button" class="cc-button" style=" margin-right: 1rem!important;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-smile"><circle cx="12" cy="12" r="10"></circle><path d="M8 14s1.5 2 4 2 4-2 4-2"></path><line x1="9" y1="9" x2="9.01" y2="9"></line><line x1="15" y1="9" x2="15.01" y2="9"></line></svg>
+                            </button>
+                        </div>
+                        <input type="text" placeholder="Write your message" class="input" style="padding: 6px 12px;" id='msgBox'>
+                        <div class="flex">
+                            <button class="cc-button" type="button" style="margin-left:1rem;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-paperclip"><path d="M21.44 11.05l-9.19 9.19a6 6 0 0 1-8.49-8.49l9.19-9.19a4 4 0 0 1 5.66 5.66l-9.2 9.19a2 2 0 0 1-2.83-2.83l8.49-8.48"></path></svg>
+                            </button>
+                            <button class="cc-button" type="button" style="margin-left:1rem;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mic"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"></path><path d="M19 10v2a7 7 0 0 1-14 0v-2"></path><line x1="12" y1="19" x2="12" y2="23"></line><line x1="8" y1="23" x2="16" y2="23"></line></svg>
+                            </button>
+                            <button class="cc-button cc-btn-submit" type="submit" style="margin-left:1rem;" id="msg-btn-submit">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-send"><line x1="22" y1="2" x2="11" y2="13" fill="#fff"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Modals and sidebars -->
+    <div class="profile-sidebar">
+        
+        <div class="flex align-centre top-sec">
+            <span>Profile</span>
+            <div class="p-s-ts-btns">
+                <span class="ts-btn-item">
+                    <a href="#" class="btn-profile btn-p-light">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit-2"><path d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"></path></svg>
+                    </a>
+                </span>
+                <span class="ts-btn-item">
+                    <a class="btn-profile btn-p-d sidebar-close">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                    </a>
+                </span>
+            </div>
+        </div>
+        <div class="ps-scroll">
+            <div class="profile-body">
+                <div class="t-centre">
+                    <img class="profile-img" src="./static/img/profile.jpg">
+                    <h5 style="margin-bottom: .25rem!important">Shaiq Kar</h5>
+                    <small class="t-m" style="font-style: italic;">Last Seen: Today</small>
+                    <nav class="flex j-centre p-nav tabs">
+                        <a class="p-nav-link p-nav-link-active" data-tab-id="tab1">About</a>
+                        <a class="p-nav-link" data-tab-id="tab2">Media</a>
+                    </nav>
+                </div>
+
+                <div class="p-nav-content p-nav-t1 p-nav-t-active" id="tab1">
+                    <div class="mt4 p-nav-item">
+                        <p class="mt4 t-m">Lorem ipsum is a pseudo-Latin text used in web design, typography,
+                            layout, and printing in place of English to emphasise design elements over content.
+                            It's also called placeholder (or filler) text. It's a convenient tool for
+                            mock-ups.
+                        </p>
+                        <div class="mt4 mb4">
+                            <h6>Phone</h6>
+                            <p class="t-m">700 634 3764</p>
+                        </div>
+                        <div class="mt4 mb4">
+                            <h6>City</h6>
+                            <p class="t-m">Srinagar / Banglore</p>
+                        </div>
+                        <div class="mt4 mb4">
+                            <h6>Website</h6>
+                            <p class="t-m"><a href="https://linkedin.com/in/shaiqkar" style="color:var(--green)">https://shaiqkar.dev</a></p>
+                        </div>
+                        <div class="mt4 mb4">
+                            <h6>Connect with Me</h6>
+                            <ul class="s-icons">
+                                <li>
+                                    <a href="https://fb.com/shaiq.kar.7">
+                                        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22px" height="22px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"> <g> <path d="M296.296,512H200.36V256h-64v-88.225l64-0.029l-0.104-51.976C200.256,43.794,219.773,0,304.556,0h70.588v88.242h-44.115 c-33.016,0-34.604,12.328-34.604,35.342l-0.131,44.162h79.346l-9.354,88.225L296.36,256L296.296,512z"/> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22px" height="22px" viewBox="0 0 449.956 449.956" style="enable-background:new 0 0 449.956 449.956;" xml:space="preserve"> <g> <path d="M449.956,85.657c-17.702,7.614-35.408,12.369-53.102,14.279c19.985-11.991,33.503-28.931,40.546-50.819 c-18.281,10.847-37.787,18.268-58.532,22.267c-18.274-19.414-40.73-29.125-67.383-29.125c-25.502,0-47.246,8.992-65.24,26.98 c-17.984,17.987-26.977,39.731-26.977,65.235c0,6.851,0.76,13.896,2.284,21.128c-37.688-1.903-73.042-11.372-106.068-28.407 C82.46,110.158,54.433,87.46,31.403,59.101c-8.375,14.272-12.564,29.787-12.564,46.536c0,15.798,3.711,30.456,11.138,43.97 c7.422,13.512,17.417,24.455,29.98,32.831c-14.849-0.572-28.743-4.475-41.684-11.708v1.142c0,22.271,6.995,41.824,20.983,58.674 c13.99,16.848,31.645,27.453,52.961,31.833c-7.995,2.091-16.086,3.138-24.269,3.138c-5.33,0-11.136-0.475-17.416-1.42 c5.9,18.459,16.75,33.633,32.546,45.535c15.799,11.896,33.691,18.028,53.677,18.418c-33.498,26.262-71.66,39.393-114.486,39.393 c-8.186,0-15.607-0.373-22.27-1.139c42.827,27.596,90.03,41.394,141.612,41.394c32.738,0,63.478-5.181,92.21-15.557 c28.746-10.369,53.297-24.267,73.665-41.686c20.362-17.415,37.925-37.448,52.674-60.097c14.75-22.651,25.738-46.298,32.977-70.946 c7.23-24.653,10.848-49.344,10.848-74.092c0-5.33-0.096-9.325-0.287-11.991C421.785,120.202,437.202,104.306,449.956,85.657z"/> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> </svg>
+                                    </a>
+                                </li>
+                                <li> 
+                                    <a href="#">
+                                        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" width="26px" height="26px" style="enable-background:new 0 0 512 512;" xml:space="preserve"> <g> <g> <polygon points="448,224 448,160 416,160 416,224 352,224 352,256 416,256 416,320 448,320 448,256 512,256 512,224 		"/> </g> </g> <g> <g> <path d="M160,224v64h90.528c-13.216,37.248-48.8,64-90.528,64c-52.928,0-96-43.072-96-96c0-52.928,43.072-96,96-96 c22.944,0,45.024,8.224,62.176,23.168l42.048-48.256C235.424,109.824,198.432,96,160,96C71.776,96,0,167.776,0,256 s71.776,160,160,160s160-71.776,160-160v-32H160z"/> </g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="mt4 mb4">
+                            <h6 class="mb4">Settings</h6>
+                            <div>
+                                <div class="sep flex align-centre">
+                                    <label class="checkbox">
+                                        <input type="checkbox">
+                                        <span></span>
+                                    </label>
+                                    <span style="margin-left: 1rem;" class="s-itm">Notifications</span>
+                                </div>
+                                <div class="sep flex align-centre">
+                                    <label class="checkbox">
+                                        <input type="checkbox">
+                                        <span></span>
+                                    </label>
+                                    <span style="margin-left: 1rem;" class="s-itm">Read Receipts</span>
+                                </div>
+                                <div class="sep flex align-centre">
+                                    <label class="checkbox">
+                                        <input type="checkbox">
+                                        <span></span>
+                                    </label>
+                                    <span style="margin-left: 1rem;" class="s-itm">Two-step verification</span>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <div class="p-nav-content p-nav-t2" id="tab2">
+                    <h6 class="flex align-centre hd">
+                        <span>Recent Files</span>
+                        <a href="#" class="">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-upload mr-2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="17 8 12 3 7 8"></polyline><line x1="12" y1="3" x2="12" y2="15"></line></svg> Upload
+                        </a>
+                    </h6>
+                    <ul>
+                        <li class="file-item">
+                            <img src="./static/img/icons/xlsx.svg">
+                            yaarme_report_1207.xlsx</li>
+                        <li class="file-item">
+                            <img src="./static/img/icons/docx.svg">
+                            projectDetails.docx</li>
+                        <li class="file-item">
+                            <img src="./static/img/icons/image.svg">
+                            prototype6372.jpg</li>
+                        <li class="file-item">
+                            <img src="./static/img/icons/pdf.svg">
+                            internship_report.pdf</li>
+                        
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <script type="text/javascript" src="./static/js/app.js"></script>
+</body>
+
+</html>
